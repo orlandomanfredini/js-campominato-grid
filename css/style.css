@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-color: #7FFFD3;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
+
+.cell{
+    aspect-ratio: 1;
+    width: calc(100% / 10);
+    border: 1px solid black;
+    align-self: flex-start;
+}
+
