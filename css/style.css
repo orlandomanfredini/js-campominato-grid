@@ -1,18 +1,28 @@
-body{
+
+.main-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    
+    margin-top: 30px;
 }
 
 .btn-start{
     border-radius: 5px;
     background-color: transparent;
     border: 1px solid cornflowerblue;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.title{
+  color: cornflowerblue;
+  text-align: center;
+
 }
 .container{
     background-color: #3c6154;
+    border-radius: 10px;
     height: 600px;
     width: 100%;
     display: flex;
