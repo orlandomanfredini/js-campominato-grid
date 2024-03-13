@@ -20,6 +20,14 @@
   text-align: center;
 
 }
+
+#select-difficult {
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    font-size: 15px;
+}
 .container{
     background-color: #3c6154;
     border-radius: 10px;
@@ -39,8 +47,8 @@
 }
 
 .cell{
-    aspect-ratio: 1;
     width: calc(100% / 10 - 2px);
+    aspect-ratio: 1;
     border: 1px solid black;
     align-self: flex-start;
     display: flex;
@@ -50,5 +58,25 @@
 
 .bg-change{
     background-color: #5e84a8;
+}
+
+.level-2{
+    width: calc(100% / 9 - 2px);
+    aspect-ratio: 1;
+    border: 1px solid black;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-3{
+    width: calc(100% / 7 - 2px);
+    aspect-ratio: 1;
+    border: 1px solid black;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -20,8 +20,15 @@ console.log(btnStart)
 // creo collegamento con main-box dove inserirò le celle
 let boxCell = document.querySelector('.main-box')
 
+// creo collegamento con la select di difficoltà
+let select = document.getElementById('select'); // dom element
+
+
+
 // creo numero di iterazioni che voglio
-const interation = 101; //i = 1 in ciclo for 
+let interation = parseInt(select.value) //i = 1 in ciclo for 
+console.log(interation)
+
 
 // creo ciclo per riempire main-box con celle numerate
 for(let i = 1; i < interation; i++){
@@ -29,24 +36,52 @@ for(let i = 1; i < interation; i++){
     let cell = document.createElement('button')
     // gli stampo il suo numero
     cell.innerHTML += [i]
+
+
     // creo ascolto evento clic sul button gioca ora
     btnStart.addEventListener('click', function(){
-    // aggiungo la classe cell che da il layout della casella
-    cell.classList.add('cell')
-    // vado ad appendere al div main-box tutte le caselle 
-    boxCell.append(cell)
+        
+            
+        if(interation === 101){
+            // aggiungo la classe cell che da il layout della casella
+            cell.classList.add('cell')
+            // vado ad appendere al div main-box tutte le caselle 
+            boxCell.append(cell)
+        }
 
-    
+        if(interation === 81){
+            cell.classList.remove('cell')
+            cell.classList.add('level-2')
+            boxCell.append(cell)
+            
+        }
+
+        if(interation === 49){
+            cell.classList.remove('level-2')
+            cell.classList.add('level-3')
+            boxCell.append(cell)
+        }
+
+        
+   
+   
+        // ***** COLORE ******
+
     // aggiungo evento ascolto sulla singola cella con classe .cell
     cell.addEventListener('click', function(){
     // aggiungo e tolgo classe che cambia colore
     cell.classList.toggle('bg-change')
     // stampo in console numero casella
     console.log ('cella cliccata n: ' + cell.innerHTML)
-})
+    })
+ 
 
 })
 
 }
+
+
+
+
 
 

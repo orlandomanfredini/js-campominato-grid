@@ -9,7 +9,14 @@
 <body>
     <h1 class="title">CAMPOMINATO</h1>
     <div class="main-container">
-        <button class="btn-start">Gioca ora</button>
+        <div class="input-box">
+            <button class="btn-start">Gioca ora</button>
+            <select name="play-option" id="select" onchange="selectCaselle">
+               <option value="101">Difficolta 1</option>
+               <option value="81">Difficolta 2</option>
+               <option value="49">Difficolta 3</option>
+            </select>
+        </div>
         <div class="container">
           <div class="main-box">
               <!--<div class="cell"></div>-->
