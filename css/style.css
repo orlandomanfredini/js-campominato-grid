@@ -1,6 +1,15 @@
 body{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+    
+}
+
+.btn-start{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid cornflowerblue;
 }
 .container{
     background-color: #7FFFD3;
@@ -16,7 +25,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     aspect-ratio: 1;
-    border: 1px solid black;
+    
 }
 
 .cell{
